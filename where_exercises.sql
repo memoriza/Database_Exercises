@@ -24,7 +24,7 @@ SELECT birth_date, last_name
 FROM employees
 WHERE birth_date LIKE '%-12-25%';
 
--- Employees with a 'q' in their last name — 
+-- Employees with a 'q' in their last name and not 'qu' — 
 SELECT first_name, last_name
 FROM employees
-WHERE last_name LIKE '%q%';
+WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
