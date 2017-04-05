@@ -9,6 +9,11 @@ SELECT first_name, last_name
 FROM employees
 WHERE last_name LIKE 'E%' OR last_name LIKE '%E';
 
+-- Employees whose last name starts AND ends with 'E' — 
+SELECT first_name, last_name
+FROM employees
+WHERE last_name LIKE 'E%' AND last_name LIKE '%E';
+
 -- Employees hired in the 90s — 
 SELECT hire_date, last_name
 FROM employees
