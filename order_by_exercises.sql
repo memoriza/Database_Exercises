@@ -3,7 +3,7 @@ SELECT first_name, last_name
 FROM employees
 WHERE (first_name = 'Irena' OR first_name ='Vidya' OR first_name = 'Maya')
 AND gender = 'M'
-ORDER BY last_name ASC, first_name ASC;
+ORDER BY last_name DESC, first_name DESC;
 
 -- Employees whose last name starts OR ends with 'E' — 
 SELECT first_name, last_name
@@ -14,7 +14,7 @@ WHERE last_name LIKE 'E%' OR last_name LIKE '%E';
 SELECT first_name, last_name
 FROM employees
 WHERE last_name LIKE 'E%' AND last_name LIKE '%E'
-ORDER BY emp_no;
+ORDER BY emp_no DESC;
 
 
 -- Employees hired in the 90s and born on Christmas— 
