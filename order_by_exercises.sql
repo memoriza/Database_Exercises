@@ -3,7 +3,7 @@ SELECT first_name, last_name
 FROM employees
 WHERE (first_name = 'Irena' OR first_name ='Vidya' OR first_name = 'Maya')
 AND gender = 'M'
-ORDER BY first_name ASC, last_name ASC;
+ORDER BY last_name ASC, first_name ASC;
 
 -- Employees whose last name starts OR ends with 'E' — 
 SELECT first_name, last_name
