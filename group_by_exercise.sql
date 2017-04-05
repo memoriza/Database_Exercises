@@ -13,7 +13,7 @@ WHERE last_name LIKE 'E%' OR last_name LIKE '%E';
 SELECT last_name
 FROM employees
 WHERE last_name LIKE 'E%' AND last_name LIKE '%E'
-GROUP BY last_name;
+GROUP BY first_name, last_name;
 
 
 -- Employees hired in the 90s and born on Christmas— 
